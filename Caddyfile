@@ -1,0 +1,14 @@
+# Replace :80 with your domain (e.g., folio.example.com) to enable auto-HTTPS
+:80 {
+	encode gzip
+
+	# API requests go directly to the backend
+	handle /api/* {
+		reverse_proxy backend:8000
+	}
+
+	# All other requests go to the frontend
+	handle {
+		reverse_proxy frontend:3000
+	}
+}

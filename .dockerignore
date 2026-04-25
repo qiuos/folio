@@ -1,0 +1,39 @@
+# Git
+.git
+.gitignore
+
+# Documentation
+*.md
+docs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python
+backend/.venv/
+backend/__pycache__/
+backend/**/__pycache__/
+backend/**/*.pyc
+backend/*.egg-info/
+backend/tests/
+
+# Node
+frontend/node_modules/
+frontend/.git/
+
+# Environment
+.env
+*.local
+
+# Data
+backend/data/
+
+# Claude
+.claude/
