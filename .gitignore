@@ -12,6 +12,7 @@ backend/.venv/
 # Node
 node_modules/
 frontend/dist/
+.vite/
 
 # IDE
 .vscode/
@@ -30,5 +31,9 @@ books/
 
 # Design & Requirements
 DESIGN.md
-*.product-design.md
+folio-product-design.md
 .ai_memory/
+
+# Test scripts
+backend/test_chart.py
+backend/test_insert.py
